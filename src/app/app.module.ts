@@ -4,23 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FamiliaComponent } from './mi-familia/familia.component';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     FamiliaComponent
-   
-    
   ],
+
+
   imports: [
-    BrowserModule
+    BrowserModule,
+    
   
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 
 export class AppModule { }
