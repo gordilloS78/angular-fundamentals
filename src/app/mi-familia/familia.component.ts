@@ -4,22 +4,29 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'my-family',
     template: `
-                <h2> Integrantes de {{nombre}} </h2
+                <div style="text-align:center">
+                <h2> Integrantes de {{nombre}} </h2>
                  <ul>
                     <li>Primero el Amor de mi VIDA: {{esposa}}</li>
+                 </ul>
                  <ul>
                     <h3>Mis Hijos:</h3>
-                    <li *ngFor= "let hijo of mis_hijos"> {{ hijo }} </li>
+                    <li *ngFor="let hijos of mis_hijos"> {{ hijos }} </li>
                 </ul> 
     
-                </ul>  ` })
+                 
+                </div> `,
+        styleUrls: ['./familia.component.css'] 
+            
+            })
+        
 
 export class FamiliaComponent{
     public nombre = "Mi Familia";
     public esposa = "Ivanna A. Brito";
     
-    public mi_hijos = [
-        'Emiliano Valentín',
+    public mis_hijos = [
+         'Emiliano Valentín',
         'Thiago Jesús',
         'Adriano Jesús'
       ];
