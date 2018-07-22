@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 
 @Component({
-    selector:'my-family',
-    template:`
+    selector: 'my-family',
+    template: `
                 <h2> Integrantes de {{nombre}} </h2
                  <ul>
                     <li>Primero el Amor de mi VIDA: {{esposa}}</li>
@@ -12,10 +12,7 @@ import { Component } from '@angular/core';
                     <li *ngFor= "let hijo of mis_hijos"> {{ hijo }} </li>
                 </ul> 
     
-                </ul> 
-            `,
-    
-})
+                </ul>  ` })
 
 export class FamiliaComponent{
     public nombre = "Mi Familia";
